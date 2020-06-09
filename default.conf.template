@@ -1,6 +1,7 @@
 http {
   server {
     listen ${PORT};
+    access_log /dev/stdout;
 
     location / {
       default_type application/json;
