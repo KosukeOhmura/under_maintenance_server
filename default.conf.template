@@ -1,0 +1,10 @@
+http {
+  server {
+    listen ${PORT};
+
+    location / {
+      default_type application/json;
+      return 503 '{"message": "the server is under maintenance"}';
+    }
+  }
+}
